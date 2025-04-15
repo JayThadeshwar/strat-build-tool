@@ -159,10 +159,3 @@ This project is licensed under the MIT License.
 
 ## Contributing
 Feel free to submit issues or pull requests to enhance strategies, metrics, or performance. Suggestions for new features (e.g., visualizations, additional data sources) are welcome!
-
----
-
-### Notes for Integration
-- **README File**: Save this content as `README.md` in the project root directory.
-- **Customization**: If you have a specific repository URL, license, or contributor guidelines, let me know, and I can tailor the README further.
-- **Additional Info**: If you want to include screenshots, example CSV outputs, or a logo, I can help format those.
