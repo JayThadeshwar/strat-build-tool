@@ -25,6 +25,8 @@ trading_strategy/
 ├── backtester.py       # Generic backtester for parameter optimization
 ├── main.py             # Example script to run SMA and EMA backtests
 ├── backtest_results/   # Output directory for CSV results
+├── pyproject.toml      # Poetry configuration and dependency management
+├── poetry.lock         # Lock file for reproducible dependencies
 └── README.md           # Documentation
 ```
 
@@ -35,12 +37,28 @@ trading_strategy/
    cd trading_strategy
    ```
 
-2. **Install Dependencies**:
+2. **Install Poetry** (if not already installed):
+
    ```bash
-   pip install yfinance pandas numpy
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+   Follow the instructions to add Poetry to your PATH.
+
+3. **Install Dependencies using Poetry**:
+   ```bash
+   poetry install
+   ```
+   
+   This will:
+   - Create a virtual environment (if not already active)
+   - Install pandas, yfinance, and plotly with pinned versions
+   - Set up the project for development
+
+4. **Activate the Virtual Environment**
+   ```eval $(poetry env activate)
    ```
 
-3. **Verify Setup**:
+5. **Verify Setup**:
    Ensure all Python files (`base_strategy.py`, `ma_strategy.py`, `ema_strategy.py`, `performance.py`, `backtester.py`, `main.py`) are in the same directory.
 
 ## Usage
@@ -145,8 +163,8 @@ Edit `main.py` to modify:
    ```
 
 ## Requirements
-- Python 3.7+
-- Libraries: `yfinance`, `pandas`, `numpy`
+- Python 3.9+
+- Libraries: `yfinance`, `pandas`, `numpy`, `plotly`
 - Internet connection for Yahoo Finance data
 
 ## Notes
