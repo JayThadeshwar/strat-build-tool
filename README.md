@@ -55,7 +55,8 @@ trading_strategy/
    - Set up the project for development
 
 4. **Activate the Virtual Environment**
-   ```eval $(poetry env activate)
+   ```bash
+   eval $(poetry env activate)
    ```
 
 5. **Verify Setup**:
